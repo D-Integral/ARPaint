@@ -3,15 +3,14 @@
 //  ARDrawing
 //
 //  Created by Dmytro Skorokhod on 12/22/17.
-//  Copyright © 2017 Dmytro Skorokhod. All rights reserved.
+//  Copyright © 2017-2024 Dmytro Skorokhod. All rights reserved.
 //
 
 import UIKit
 import ARKit
 import SceneKit
-import EFColorPicker
 
-class ViewController: UIViewController, ARSCNViewDelegate, EFColorSelectionViewControllerDelegate {
+class ViewController: UIViewController, ARSCNViewDelegate, UIColorPickerViewControllerDelegate {
     @IBOutlet weak var sceneView: ARSCNView!
     @IBOutlet weak var drawButton: UIButton!
     
@@ -68,7 +67,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, EFColorSelectionViewC
     }
     
     @IBAction func changeColor(_ sender: Any) {
-        let colorSelectionController = EFColorSelectionViewController()
+        let colorSelectionController = UIColorPickerViewController()
         let navCtrl = UINavigationController(rootViewController: colorSelectionController)
         navCtrl.navigationBar.backgroundColor = UIColor.white
         navCtrl.navigationBar.isTranslucent = false
@@ -86,18 +85,13 @@ class ViewController: UIViewController, ARSCNViewDelegate, EFColorSelectionViewC
         colorSelectionController.navigationItem.rightBarButtonItem = doneBtn
         
         colorSelectionController.delegate = self
-        colorSelectionController.color = drawButton.backgroundColor ?? UIColor.white
+        colorSelectionController.selectedColor = drawButton.backgroundColor ?? UIColor.white
         
         self.present(navCtrl, animated: true, completion: nil)
     }
     
     @IBAction func reset(_ sender: Any) {
         restartSession()
-    }
-    
-    // MARK:- EFColorSelectionViewControllerDelegate
-    func colorViewController(colorViewCntroller: EFColorSelectionViewController, didChangeColor color: UIColor) {
-        drawButton.backgroundColor = color
     }
     
     func restartSession() {
@@ -114,6 +108,13 @@ class ViewController: UIViewController, ARSCNViewDelegate, EFColorSelectionViewC
     
     @objc func ef_dismissViewController(sender: Any) {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    // MARK: - UIColorPickerViewControllerDelegate
+    func colorPickerViewController(_ viewController: UIColorPickerViewController,
+                                   didSelect color: UIColor,
+                                   continuously: Bool) {
+        drawButton.backgroundColor = color
     }
 }
 

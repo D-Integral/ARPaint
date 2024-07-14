@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8874E56818624D03A2E1B7CF /* Pods_ARDrawing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D43FBA2C75C5E9D7F1A174B /* Pods_ARDrawing.framework */; };
 		C3461D951FED51A9003FD709 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3461D941FED51A9003FD709 /* AppDelegate.swift */; };
 		C3461D971FED51A9003FD709 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3461D961FED51A9003FD709 /* ViewController.swift */; };
 		C3461D9A1FED51A9003FD709 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3461D981FED51A9003FD709 /* Main.storyboard */; };
@@ -16,7 +15,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1D43FBA2C75C5E9D7F1A174B /* Pods_ARDrawing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARDrawing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3461D911FED51A9003FD709 /* ARDrawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARDrawing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3461D941FED51A9003FD709 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3461D961FED51A9003FD709 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,8 +22,6 @@
 		C3461D9B1FED51A9003FD709 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3461D9E1FED51A9003FD709 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3461DA01FED51A9003FD709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C4AD34F8633C846919648706 /* Pods-ARDrawing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARDrawing.release.xcconfig"; path = "Pods/Target Support Files/Pods-ARDrawing/Pods-ARDrawing.release.xcconfig"; sourceTree = "<group>"; };
-		F5CB3E835D354A1049944000 /* Pods-ARDrawing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARDrawing.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ARDrawing/Pods-ARDrawing.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,37 +29,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8874E56818624D03A2E1B7CF /* Pods_ARDrawing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		61D5B8D748EF73E70EDBA0CE /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F5CB3E835D354A1049944000 /* Pods-ARDrawing.debug.xcconfig */,
-				C4AD34F8633C846919648706 /* Pods-ARDrawing.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		99AB8C5CE41E9543A85EF9D2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1D43FBA2C75C5E9D7F1A174B /* Pods_ARDrawing.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		C3461D881FED51A9003FD709 = {
 			isa = PBXGroup;
 			children = (
 				C3461D931FED51A9003FD709 /* ARDrawing */,
 				C3461D921FED51A9003FD709 /* Products */,
-				61D5B8D748EF73E70EDBA0CE /* Pods */,
-				99AB8C5CE41E9543A85EF9D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,12 +71,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3461DA31FED51A9003FD709 /* Build configuration list for PBXNativeTarget "ARDrawing" */;
 			buildPhases = (
-				4C80B7CC41E805D5B2157A80 /* [CP] Check Pods Manifest.lock */,
 				C3461D8D1FED51A9003FD709 /* Sources */,
 				C3461D8E1FED51A9003FD709 /* Frameworks */,
 				C3461D8F1FED51A9003FD709 /* Resources */,
-				4E360E05F518D066DE142AF5 /* [CP] Embed Pods Frameworks */,
-				103078A808C2ACF55408B707 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -157,60 +130,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		103078A808C2ACF55408B707 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ARDrawing/Pods-ARDrawing-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4C80B7CC41E805D5B2157A80 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ARDrawing-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4E360E05F518D066DE142AF5 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ARDrawing/Pods-ARDrawing-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/EFColorPicker/EFColorPicker.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EFColorPicker.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ARDrawing/Pods-ARDrawing-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C3461D8D1FED51A9003FD709 /* Sources */ = {
@@ -353,13 +272,12 @@
 		};
 		C3461DA41FED51A9003FD709 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F5CB3E835D354A1049944000 /* Pods-ARDrawing.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EYWEP6YJP9;
 				INFOPLIST_FILE = ARDrawing/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.d-integral.ARDrawing";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -370,13 +288,12 @@
 		};
 		C3461DA51FED51A9003FD709 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C4AD34F8633C846919648706 /* Pods-ARDrawing.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EYWEP6YJP9;
 				INFOPLIST_FILE = ARDrawing/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.d-integral.ARDrawing";
 				PRODUCT_NAME = "$(TARGET_NAME)";
